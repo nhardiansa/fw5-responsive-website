@@ -48,6 +48,10 @@ button.sign-up {
   color: #FFCD61;
 }
 
+img.google-icon {
+  width: 2.1em;
+}
+
 a.forgot {
   color: #393939;
   font-family: Mulish, sans-serif;
@@ -114,7 +118,7 @@ footer > hr {
   }
 
   #side-image {
-    background-image: url("../assets/img/side-login-img.png");
+    background-image: url("../img/side-login-img.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -127,11 +131,38 @@ footer > hr {
     grid-template-columns: 1fr 1fr;
   }
 
+  form.login-form {
+    margin-top: 4.5em;
+  }
+
+  form.login-form > input {
+    margin-bottom: 1.5em !important;
+    padding-left: 2em;
+  }
+
   .main {
-    padding-inline: 4.5em ;
+    padding-inline: 4em ;
   }
   
   footer {
-    padding-inline: 3em ;
+    margin-top: 2.3em;
+    padding-inline: 3em;
+    padding-top: 5em;
+  }
+
+  footer > p.copy-writing {
+    width: 45%;
+  }
+
+  footer > p.since {
+    margin-block: 3.2em !important;
+  }
+  
+  footer > hr.line-separator {
+    margin-bottom: 2em !important;
+  }
+
+  footer > .icons {
+    margin-bottom: 2em !important;
   }
 }
