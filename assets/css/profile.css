@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body {
@@ -123,10 +123,63 @@ main .gender .gender-option {
   margin-inline: 2rem;
 }
 
+main .form-section {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+main .form-section h2 {
+  font-weight: 900;
+  color: #4F5665;
+}
+
+main .form-section .input-lable {
+  color: #9F9F9F;
+}
+
+main .form-section .text-input {
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+main .form-section .text-input:focus {
+  outline: none;
+}
+
+main .form-section .button-groups button, main .form-section .button-groups a {
+  font-weight: 900;
+  padding: 0.875rem !important;
+  margin-bottom: 1rem;
+  border-radius: 0.625rem;
+
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+main .form-section .button-groups button.save {
+  background: #FFCD61;
+}
+
+main .form-section .button-groups > a.edit-password {
+  background: #393939;
+  color: #FFCD61;
+}
+
+main .form-section .button-groups button.cancel {
+  background:  rgba(203, 203, 212, 0.27);;
+}
+
   /* Main end */
 
 @media (min-width: 768px) { 
-  
+  main .form-section .button-groups button, main .form-section .button-groups a {
+    padding: 2rem 4.5rem !important;
+  }
 }
 
 @media (min-width: 992px) { 
