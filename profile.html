@@ -117,6 +117,60 @@
     </nav>
     <!-- Navbar end -->
 
+    <!-- Main start -->
+    <main class="container">
+      <h1 class="edit-title text-center text-lg-start mt-lg-4">Profile</h1>
+      <div
+        class="contact text-center d-flex flex-column align-items-center mt-5"
+      >
+        <div class="img-wrapper d-inline-block position-relative">
+          <img
+            src="./assets/img/profile-picture/samantha-doe.png"
+            alt="samantha-doe"
+            class="contact-img img-thumbnail rounded-circle"
+          />
+          <button
+            class="edit-btn rounded-circle btn btn-warning position-absolute"
+          >
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+        <div class="contact-info mt-5">
+          <h2 class="">Samantha Doe</h2>
+          <p class="email mt-4">
+            samanthadoe@mail.com <br />
+            +62833467823 <br />
+            Has been active since 2013
+          </p>
+        </div>
+        <div class="gender d-flex">
+          <form class="d-flex">
+            <div class="male gender-option form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+              />
+              <label class="form-check-label" for="male"> Male </label>
+            </div>
+            <div class="female gender-option form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+              />
+              <label class="form-check-label" for="female"> Female </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Main end -->
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
