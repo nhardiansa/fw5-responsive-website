@@ -1,0 +1,74 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  height: 1000px;
+}
+
+/* Navbar start */
+nav {
+  font-family: Nunito, sans-serif;
+  z-index: 1;
+}
+
+nav .navbar-toggler {
+  border: none;
+}
+
+nav .navbar-brand img, footer .ts img {
+  width: 2.5625rem;
+}
+
+nav .profile .message-notif > img.message {
+  max-height: 1.75rem;
+}
+
+nav .profile .message-notif .count {
+  width: 1.25rem;
+  height: 1.25rem;
+  top: -0.5rem;
+  left: -0.5rem;
+  background: #FFCD61;
+
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 0.625rem;
+
+  padding-right: 0.1rem;
+  padding-top: 0.1rem;
+}
+
+nav .profile img.profile-pict {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/* Navbar end */
+
+@media (min-width: 768px) { 
+  
+}
+
+@media (min-width: 992px) { 
+  html {
+    font-size: 16px;
+  }
+  
+  /* Navbar start */
+  nav .profile img.profile-pict{
+    margin-left: 2.5rem;
+  }
+
+  nav a.nav-link {
+    margin-inline: 1rem;
+  }
+
+  nav .navbar-nav {
+    margin-right: 10.2rem;
+  }
+
+  nav .navbar-nav {
+    align-items: center;
+  }
+  /* Navbar end */
+}
