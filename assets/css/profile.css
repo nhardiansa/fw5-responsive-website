@@ -147,6 +147,11 @@ main .form-section .text-input {
   width: 100%;
 }
 
+main .form-section textarea.text-input {
+  padding-top: 1rem;
+  padding-bottom: 0 !important;
+}
+
 main .form-section .text-input:focus {
   outline: none;
 }
