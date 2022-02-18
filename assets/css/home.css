@@ -3,6 +3,7 @@ html {
   font-size: 14px;
 }
 
+/* Navbar start */
 nav {
   font-family: Nunito, sans-serif;
   z-index: 1;
@@ -15,7 +16,9 @@ nav .navbar-toggler {
 nav .navbar-brand img, footer .ts img {
   width: 2.5625rem;
 }
+/* Navbar end */
 
+/* Jumbotron start */
 .jumbotron {
   background-image: url("../../assets/img/jumbotron.png");
   background-size: cover;
@@ -78,7 +81,9 @@ nav .navbar-brand img, footer .ts img {
 
   padding: 0.6rem 2rem;
 }
+/* Jumbotron end */
 
+/* Popular start */
 .popular {
   margin-top: 3rem;
 }
@@ -139,7 +144,9 @@ nav .navbar-brand img, footer .ts img {
 .popular .image-desc p {
   font-size: 0.85rem;
 }
+/* Popular end */
 
+/* Testimonial start */
 .testimonial {
   margin-top: 8.13rem; 
 }
@@ -213,7 +220,9 @@ nav .navbar-brand img, footer .ts img {
   mix-blend-mode: normal;
   margin: 0;
 }
+/* Testimonial end */
 
+/* Footer start */
 footer {
   margin-top: 6rem;
   padding-top: 4.75rem;
@@ -275,6 +284,7 @@ footer .socmed .icon {
   font-size: 1.375rem;
   margin-inline: 1rem;
 }
+/* Footer end */
 
 @media (min-width: 768px) { 
   .hero-content > h1 {
