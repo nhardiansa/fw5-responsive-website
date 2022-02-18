@@ -29,7 +29,7 @@ nav .navbar-brand img, footer .ts img {
   padding-bottom: 10rem !important;
 }
 
-.hero-content > h1 {
+.jumbotron .hero-content > h1 {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: bold;
@@ -39,7 +39,7 @@ nav .navbar-brand img, footer .ts img {
   mix-blend-mode: normal;
 }
 
-.hero-content > p {
+.jumbotron .hero-content > p {
   font-family: Nunito, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -49,13 +49,13 @@ nav .navbar-brand img, footer .ts img {
   margin-top: 2.5rem;
 }
 
-.hero-content > .aesthetic-line {
+.jumbotron .hero-content > .aesthetic-line {
   width: 10%;
   border: 1px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.hero-content select.select-input {
+.jumbotron .hero-content .filter-input {
   font-family: Nunito, sans-serif ;
   font-style: normal;
   font-weight: bold;
@@ -65,12 +65,24 @@ nav .navbar-brand img, footer .ts img {
 
   background: rgba(255, 255, 255, 0.5);
   border: 0.8px solid #AFB0B9;
-  border-radius: 6px;
+  border-radius: 0.6rem;
 
-  padding: 0.6rem;
+  padding: 0.8rem;
 }
 
-.hero-content button.search-btn {
+.jumbotron .down-icon {
+  color: #393939;
+
+  position: absolute;
+  right: 15%;
+  top: 35%;
+}
+
+.jumbotron select.filter-input:focus ~ .down-icon {
+  transform: rotate(180deg);
+}
+
+.jumbotron .hero-content button.search-btn {
   font-family: Nunito;
   font-style: normal;
   font-weight: 900;
@@ -287,15 +299,15 @@ footer .socmed .icon {
 /* Footer end */
 
 @media (min-width: 768px) { 
-  .hero-content > h1 {
+  .jumbotron .hero-content > h1 {
     width: 50%;
   }
 
-  .hero-content > p {
+  .jumbotron .hero-content > p {
     margin-top: 2.5rem;
   }
 
-  .hero-content > .aesthetic-line {
+  .jumbotron .hero-content > .aesthetic-line {
     width: 3.5%;
   }
 
@@ -380,7 +392,7 @@ footer .socmed .icon {
     padding-top: 10rem !important;
   }
 
-  .hero-content > h1 {
+  .jumbotron .hero-content > h1 {
     width: 35%;
   }
 
