@@ -1,3 +1,10 @@
+:root {
+  --one-color: #FF7C52;
+  --two-color: #FFA780;
+  --three-color: #E69580;
+  --four-color: #DCA7A3;
+  --five-color: #FFE5D2;
+}
 
 html {
   font-size: 14px;
@@ -15,6 +22,16 @@ nav .navbar-toggler {
 
 nav .navbar-brand img, footer .ts img {
   width: 2.5625rem;
+}
+
+.login-btn {
+  border-color: var(--one-color);
+  color: var(--one-color);
+}
+
+.register-btn {
+  background: var(--one-color);
+  color: #fff;
 }
 /* Navbar end */
 
@@ -87,9 +104,10 @@ nav .navbar-brand img, footer .ts img {
   font-style: normal;
   font-weight: 900;
   font-size: 1.125rem;
-  color: #393939;
-  background: #FFCD61;
+  color: #fff;
+  background: var(--one-color);
   border-radius: 8px;
+  border: none;
 
   padding: 0.6rem 2rem;
 }

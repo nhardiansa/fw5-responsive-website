@@ -1,4 +1,12 @@
-* {
+:root {
+  --one-color: #FF7C52;
+  --two-color: #FFA780;
+  --three-color: #E69580;
+  --four-color: #DCA7A3;
+  --five-color: #FFE5D2;
+}
+
+html {
   font-size: 14px;
 }
 
@@ -33,8 +41,9 @@ button, .sign-up {
 }
 
 button.login {
-  background: #FFCD61;
-  box-shadow: 0px 0px 20px rgba(248, 161, 112, 0.47)
+  background:var(--one-color);
+  box-shadow: 0px 0px 10px var(--one-color);
+  color: #FFFFFF;
 }
 
 button.google-login {
@@ -43,9 +52,9 @@ button.google-login {
 }
 
 .sign-up {
-  background: #393939;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-  color: #FFCD61;
+  background: var(--five-color);
+  box-shadow: 0px 0px 20px var(--five-color);
+  color: var(--one-color);
 }
 
 img.google-icon {
@@ -113,7 +122,7 @@ footer > hr {
 }
 
 @media (min-width: 992px) { 
-  * {
+  html {
     font-size: 16px;
   }
 

@@ -1,3 +1,11 @@
+:root {
+  --one-color: #FF7C52;
+  --two-color: #FFA780;
+  --three-color: #E69580;
+  --four-color: #DCA7A3;
+  --five-color: #FFE5D2;
+}
+
 html {
   font-size: 12px;
 }
@@ -46,7 +54,8 @@ nav .profile .message-notif .count {
   height: 1.25rem;
   top: -0.5rem;
   left: -0.5rem;
-  background: #FFCD61;
+  background: var(--one-color);
+  color: #FFFFFF;
 
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
