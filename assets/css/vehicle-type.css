@@ -16,6 +16,27 @@ nav .navbar-brand img, footer .ts img {
   width: 2.5625rem;
 }
 
+nav form input {
+  border-top-left-radius: 0.4rem !important;
+  border-bottom-left-radius: 0.4rem !important;
+  padding: 0.875rem 1.35rem !important;
+}
+
+nav form .search-btn {
+  border: 1px solid #ced4da;
+  background: #FFFFFF;
+  color: #B8BECD;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  padding: 0 1.35rem !important;
+}
+
+
+nav form .search-btn:focus, nav form input:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
 nav .profile .message-notif > img.message {
   max-height: 1.75rem;
 }
@@ -40,6 +61,73 @@ nav .profile img.profile-pict {
   height: 2.5rem;
 }
 /* Navbar end */
+
+/* Main start */
+main {
+  padding: 3.125rem 0 !important;
+}
+
+main .vehicle-list {
+  margin-top: 3rem;
+}
+
+main .vehicle-list a {
+  color: #FB8F1D;
+  text-decoration: none;
+
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 1.065rem;
+}
+
+main .vehicle-list a .icon {
+  font-size: 0.9rem;
+}
+
+main .vehicle-list h2, .testimonial h2 {
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+main .vehicle-list .popular-vehicles .image-wrapper {
+  width: 75%;
+  height: 23rem;
+  margin-bottom: 1rem;
+}
+
+main .vehicle-list .popular-vehicles img {
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .vehicle-list .image-desc{
+  background: #FFFFFF;
+  border-radius: 0 0.5rem 0 0;
+  padding: 1rem 0 0 1rem;
+  width: 50%;
+  bottom: -1rem;
+  left: -1px;
+}
+
+main .vehicle-list .image-desc h3, main .vehicle-list .image-desc p {
+  font-family: Nunito, serif;
+  color: #042521;
+  font-style: normal;
+}
+
+main .vehicle-list .image-desc h3 {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+main .vehicle-list .image-desc p {
+  font-size: 0.85rem;
+}
+/* Main end */
 
 /* Footer start */
 footer {
@@ -103,9 +191,20 @@ footer .socmed .icon {
   font-size: 1.375rem;
   margin-inline: 1rem;
 }
-  /* Footer end */
+/* Footer end */
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+
+  /* Main start */
+  main {
+    padding: 5.125rem 0 !important;
+  }
+
+  main .vehicle-list .image-desc {
+    width: 75%;
+  }
+  /* Main end */
+
   /* Footer start */
   footer .wrapper {
     display: grid;
@@ -144,13 +243,27 @@ footer .socmed .icon {
   }
 
   nav .navbar-nav {
-    margin-right: 10.2rem;
+    margin-right: 2.2rem;
   }
 
   nav .navbar-nav {
     align-items: center;
   }
   /* Navbar end */
+
+  /* Main start */
+  main {
+    padding: 8.125rem 0 !important;
+  }
+
+  main .vehicle-list .head-section {
+    margin-bottom: 3rem !important;
+  }
+
+  main .vehicle-list .image-desc {
+    width: 50%;
+  }
+  /* Main end */
 
   /* Footer start */
   footer .wrapper .ts .copywriting {
