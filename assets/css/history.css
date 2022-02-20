@@ -23,6 +23,10 @@ html {
   font-size: 12px;
 }
 
+p {
+  margin: 0;
+}
+
 /* Main start */
 main {
   font-family: var(--nunito-font);
@@ -55,6 +59,7 @@ main {
 .search-input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-right: none;
 }
 
 .search-btn {
@@ -64,15 +69,193 @@ main {
   color: #393939;
 }
 
-.search-input {
-  border-right: none;
+.select-field, .search-input::placeholder, .search-input {
+  color: #B8BECD;
 }
 
 .dropdown-icon {
   top: 35%;
   right: 10%;
 }
+
+.today-title, .a-week-ago-title {
+  color: #C4C4C4;
+  font-weight: 600;
+
+  font-size: 1.2rem;
+}
+
+.link-list {
+  border-radius: 0;
+}
+
+.link-list-item {
+  border: none;
+  border-bottom: 0.5px solid #C4C4C4;
+  padding-left: 0;
+
+  margin-bottom: 1.5rem;
+}
+
+.link-nav {
+  font-size: 1.2rem;
+  color: #393939;
+  font-weight: 600;
+}
+
+.link-nav-icon {
+  color: #999999;
+  font-size: 1.5rem;
+}
+
+.history-item {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  width: 100%;
+}
+
+.history-item.clicked {
+  width: 140%;
+  transition: 0.3s ease-in-out;
+  
+  transform: translateX(-28%);
+}
+
+.desc-wrapper {
+  padding-block: 1rem;
+}
+.desc-wrapper:hover {
+  border-radius: 1rem;
+  /* background: #F5F5F5; */
+}
+
+.vehicle-image {
+  width: 13rem;
+  height: 10.5rem;
+  object-fit: cover;
+
+  border-radius: 1.5rem;
+}
+
+.vehicle-name, .booking-date, .prepayment, .return-status {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #393939;
+}
+
+.booking-date {
+  line-height: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.prepayment {
+  margin-top: 1.5rem;
+}
+
+.booking-date {
+  font-weight: normal;
+}
+
+.return-status {
+  font-weight: normal;
+  color: green;
+}
+
+.delete-history-btn {
+  background: var(--one-color);
+  box-shadow: 0px 0px 10px var(--one-color);
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 0.5rem;
+
+  padding: 1rem 3rem;
+  /* transition: 0.3s ease-in-out; */
+}
+
+.new-arrival {
+  border: 1px solid #DADADA;
+  border-radius: 0.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+  padding-inline: 1rem;
+}
+
+.new-arrival-title {
+  font-family: var(--playfair-font);
+  font-weight: 900;
+}
+
+.new-arrival-img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.new-arrival-item-desc {
+  background: #FFFFFF;
+  bottom: 0;
+  left: -1px;
+
+  border-radius: 0 0.6rem 0 0;
+  padding: 1rem 1rem 0 2px;
+}
+
+.view-more-link {
+  font-size: 1.13rem;
+  line-height: 0.5rem;
+  color: #B8BECD;
+}
+
+.view-more-icon {
+  font-size: 3rem;
+  color: #4A4C53;
+}
+
+
 /* Main end */
 
-@media (min-width: 768px) {}
-@media (min-width: 992px) {}
+@media (min-width: 768px) {
+  /* Main start */
+  .vehicle-image {
+    width: 15rem;
+  }
+
+  .history-item.clicked {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    
+    transform: translateX(-10%);
+  }
+  /* Main end */
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* Main start */
+  main {
+    padding-top: 8rem !important;
+    /* padding-bottom: 7rem; */
+  }
+
+  .history-item.clicked {
+    width: 120%;
+    transform: translateX(-12%);
+  }
+
+  .history-wrapper {
+    display: grid;
+    column-gap: 5rem;
+  }
+
+  .search-filter, .today-list-nav, .a-week-ago {
+    grid-column: 1 / 8;
+  }
+
+  .new-arrival {
+    grid-column: 8 / 12;
+    grid-row: 1 / 4;
+  }
+  /* Main end */
+}

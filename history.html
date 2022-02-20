@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Poppins&family=Nunito:wght@400;700;900&family=Playfair+Display:wght@400;700;900&family=Rubik:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Poppins&family=Nunito:wght@400;600;700;900&family=Playfair+Display:wght@400;700;900&family=Rubik:wght@700&display=swap"
       rel="stylesheet"
     />
 
@@ -125,7 +125,7 @@
 
     <!-- Main start -->
     <main>
-      <div class="history-wrapper container">
+      <div class="history-wrapper container d-lg-grid">
         <div class="search-filter">
           <form class="d-flex">
             <div class="search-field d-flex me-3">
@@ -140,7 +140,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
-            <div class="select-input position-relative">
+            <div class="select-input flex-fill position-relative">
               <select
                 class="select-field form-select"
                 aria-label="Default select example"
@@ -157,8 +157,97 @@
             </div>
           </form>
         </div>
-        <div class="today-list-nav"></div>
-        <div class="a-week-ago"></div>
+        <div class="today-list-nav mt-5">
+          <h2 class="today-title mb-4">Today</h2>
+          <ul class="link-list list-group">
+            <li
+              class="link-list-item list-group-item d-flex align-items-center justify-content-between pb-3"
+            >
+              <a class="link-nav" href="#"
+                >Please finish your payment for vespa for Vespa Rental Jogja</a
+              >
+              <i class="link-nav-icon fa-solid fa-chevron-right ms-5"></i>
+            </li>
+            <li
+              class="link-list-item list-group-item d-flex align-items-center justify-content-between pb-3"
+            >
+              <a class="link-nav" href="#">Your payment has been confirmed!</a>
+              <i class="link-nav-icon fa-solid fa-chevron-right ms-5"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="a-week-ago mt-5">
+          <h2 class="a-week-ago-title mb-4">A week ago</h2>
+          <div
+            class="history-item mb-4 d-flex align-items-center justify-content-between"
+          >
+            <div class="desc-wrapper d-flex align-items-center">
+              <img
+                src="./assets/img/motorbike/vespa.png"
+                alt="vespa"
+                class="vehicle-image me-4 me-md-5"
+              />
+              <div class="history-item-desc">
+                <h3 class="vehicle-name">Vespa Matic</h3>
+                <p class="booking-date">Jan 18 to 21 2021</p>
+                <p class="prepayment">Prepayment : Rp. 245.000</p>
+                <p class="return-status">Has been returned</p>
+              </div>
+            </div>
+            <button class="delete-history-btn btn d-none ms-5">Delete</button>
+          </div>
+          <div
+            class="history-item mb-4 d-flex align-items-center justify-content-between"
+          >
+            <div class="desc-wrapper d-flex align-items-center w-100">
+              <img
+                src="./assets/img/motorbike/honda.png"
+                alt="vespa"
+                class="vehicle-image me-4 me-md-5"
+              />
+              <div class="history-item-desc">
+                <h3 class="vehicle-name">Vespa Matic</h3>
+                <p class="booking-date">Jan 18 to 21 2021</p>
+                <p class="prepayment">Prepayment : Rp. 245.000</p>
+                <p class="return-status">Has been returned</p>
+              </div>
+            </div>
+            <button class="delete-history-btn btn d-none ms-5">Delete</button>
+          </div>
+        </div>
+        <div
+          class="new-arrival d-none d-lg-flex flex-column align-items-center"
+        >
+          <h2 class="new-arrival-title mb-5">New Arrival</h2>
+          <div class="new-arrival-item position-relative mb-5">
+            <img
+              src="./assets/img/cars/lamborghini.png"
+              alt="lamborghini"
+              class="new-arrival-img"
+            />
+            <div class="new-arrival-item-desc position-absolute">
+              <p class="name fw-bold">Lamborghini</p>
+              <p class="location">Yogyakarta</p>
+            </div>
+          </div>
+          <div class="new-arrival-item position-relative mb-5">
+            <img
+              src="./assets/img/cars/white-jeep.png"
+              alt="white-jeep-img"
+              class="new-arrival-img"
+            />
+            <div class="new-arrival-item-desc position-absolute">
+              <p class="name fw-bold">White Jeep</p>
+              <p class="location">Kalimantan</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="view-more-link d-flex flex-column align-items-center"
+          >
+            View more <i class="view-more-icon fa-solid fa-chevron-down"></i
+          ></a>
+        </div>
       </div>
     </main>
     <!-- Main end -->
@@ -230,5 +319,21 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const historyItems = document.querySelectorAll(".history-item");
+
+      historyItems.forEach((history) => {
+        history.addEventListener("click", (el) => {
+          console.log(el.target);
+          history.classList.toggle("clicked");
+          const deleteBtn = history.querySelector(".delete-history-btn");
+          deleteBtn.classList.toggle("d-none");
+
+          if (el.target.classList.contains("delete-history-btn")) {
+            history.remove();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
