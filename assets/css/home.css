@@ -338,21 +338,6 @@ footer .socmed .icon {
     width: 75%;
   }
 
-  .testimonial .testimonial-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .testimonial .testimonial-wrapper .image-col {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-  
-  .testimonial .testimonial-wrapper .feedback-col {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
   .testimonial .feedback-col .desc {
     width: 75%;
   }
@@ -372,10 +357,6 @@ footer .socmed .icon {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
-
-  /* footer .wrapper .ts .copywriting {
-    width: 19rem;
-  } */
 
   footer .wrapper .navigations .footer-nav {
     width: 33.33%;
@@ -427,11 +408,6 @@ footer .socmed .icon {
     width: 50%;
   }
 
-  .testimonial .testimonial-wrapper {
-    grid-gap: 11.25rem;
-  }
-
-
   .testimonial .image-wrapper {
     width: 24rem;
   }
@@ -439,10 +415,6 @@ footer .socmed .icon {
   .testimonial .feedback-col .desc {
     width: 28.125rem;
   }
-
-  /* footer .wrapper {
-    grid-gap: 0;
-  } */
 
   footer .wrapper .ts .copywriting {
     width: 19rem;
