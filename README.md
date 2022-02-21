@@ -7,5 +7,5 @@ This a project I made based a bootcamp task to slicing design in figma into real
 ## How to use
 
 1. Clone this project to your local machine
-2. Run by copy the `path` of this project to browser
-3. You also can use `live server` to run the project
+2. Run by copy the path of this project where you cloned it to browser
+3. You also can use [live server](https://github.com/ritwickdey/vscode-live-server) to run the project
