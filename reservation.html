@@ -44,7 +44,7 @@
       class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 w-100 py-lg-4"
     >
       <div class="container d-flex align-items-center">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
             class="logo"
             src="./assets/img/car-wheel.png"
@@ -55,13 +55,13 @@
           <div
             class="profile d-flex d-lg-none justify-content-between align-items-center"
           >
-            <div class="profile-img">
+            <a href="/profile.html" class="profile-img">
               <img
                 src="./assets/img/profile-picture/samantha-doe.png"
                 alt="profile-img"
                 class="profile-pict rounded-circle"
               />
-            </div>
+            </a>
             <div class="message-notif position-relative ms-4 me-2">
               <img
                 src="./assets/img/msg-icon.svg"
@@ -90,9 +90,11 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex ms-auto">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link active" href="#">Vehicle Type</a>
-            <a class="nav-link" href="#">History</a>
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" href="/vehicle-type.html"
+              >Vehicle Type</a
+            >
+            <a class="nav-link" href="/history.html">History</a>
             <a class="nav-link" href="#">About</a>
           </div>
           <div
@@ -110,13 +112,13 @@
                 1
               </div>
             </div>
-            <div class="profile-img">
+            <a href="/profile.html" class="profile-img">
               <img
                 src="./assets/img/profile-picture/samantha-doe.png"
                 alt="profile-img"
                 class="profile-pict rounded-circle"
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -126,7 +128,10 @@
     <!-- Main start -->
     <main class="container px-5 px-lg-0">
       <div class="back-section">
-        <a href="#" class="back-btn d-flex align-items-center">
+        <a
+          href="/vehicle-detail.html"
+          class="back-btn d-flex align-items-center"
+        >
           <i class="back-icon fa-solid fa-chevron-left"></i>
           Reservartion
         </a>
@@ -187,7 +192,9 @@
           </div>
         </div>
         <div class="action-group mt-5 mt-md-0">
-          <button class="btn pay w-100">Pay now : Rp. 178.000</button>
+          <a href="/payment.html" class="btn pay w-100"
+            >Pay now : Rp. 178.000</a
+          >
         </div>
       </div>
     </main>

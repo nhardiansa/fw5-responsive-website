@@ -42,7 +42,7 @@
       class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 w-100 py-lg-4"
     >
       <div class="container d-flex align-items-center">
-        <a class="navbar-brand" href="#">
+        <a href="/" class="navbar-brand">
           <img
             class="logo"
             src="./assets/img/car-wheel.png"
@@ -53,16 +53,16 @@
           <div
             class="profile d-flex d-lg-none justify-content-between align-items-center"
           >
-            <div class="profile-img">
+            <a href="/profile.html" class="profile-img">
               <img
                 src="./assets/img/profile-picture/samantha-doe.png"
                 alt="profile-img"
                 class="profile-pict rounded-circle"
               />
-            </div>
+            </a>
             <div class="message-notif position-relative ms-4 me-2">
               <img
-                src="./assets/img/email-icon.png"
+                src="./assets/img/msg-icon.svg"
                 alt="message"
                 class="message"
               />
@@ -88,9 +88,9 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex ms-auto">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="/">Home</a>
             <a class="nav-link active" href="#">Vehicle Type</a>
-            <a class="nav-link" href="#">History</a>
+            <a class="nav-link" href="/history.html">History</a>
             <a class="nav-link" href="#">About</a>
             <form class="my-3 my-lg-0">
               <div class="input-group">
@@ -116,7 +116,7 @@
           >
             <div class="message-notif position-relative">
               <img
-                src="./assets/img/email-icon.png"
+                src="./assets/img/msg-icon.svg"
                 alt="message"
                 class="message"
               />
@@ -126,13 +126,13 @@
                 1
               </div>
             </div>
-            <div class="profile-img">
+            <a href="/profile.html" class="profile-img">
               <img
                 src="./assets/img/profile-picture/samantha-doe.png"
                 alt="profile-img"
                 class="profile-pict rounded-circle"
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -154,34 +154,46 @@
         <div
           class="popular-vehicles d-flex flex-column align-items-center flex-md-row row"
         >
-          <div class="image-wrapper position-relative col">
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img src="./assets/img/popular/eric-muhr.png" alt="" srcset="" />
             <div class="image-desc position-absolute">
               <h3 class="vehicle-name">Merapi</h3>
               <p class="location">Yogyakarta</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img src="./assets/img/popular/iqx-azmi.png" alt="" srcset="" />
             <div class="image-desc position-absolute">
               <h3 class="vehicle-name">Teluk Bogam</h3>
               <p class="location">Kalimantan</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img src="./assets/img/popular/manny-moreno.png" alt="" srcset="" />
             <div class="image-desc position-absolute">
               <h3 class="vehicle-name">Bromo</h3>
               <p class="location">Malang</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img src="./assets/img/popular/chuttersnap.png" alt="" srcset="" />
             <div class="image-desc position-absolute">
               <h3 class="vehicle-name">Malioboro</h3>
               <p class="location">Yogyakarta</p>
             </div>
-          </div>
+          </a>
         </div>
         <a class="d-block d-md-none text-center mt-4" href="#"
           >View all <span><i class="icon fa-solid fa-chevron-right"></i></span
@@ -201,14 +213,20 @@
         <div
           class="popular-vehicles d-flex flex-column align-items-center flex-md-row row"
         >
-          <div class="image-wrapper position-relative col">
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img src="./assets/img/popular/eric-muhr.png" alt="" srcset="" />
             <div class="image-desc position-absolute">
               <h3 class="vehicle-name">Merapi</h3>
               <p class="location">Yogyakarta</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/cars/lamborghini.png"
               alt="lamborghini.png"
@@ -218,15 +236,21 @@
               <h3 class="vehicle-name">Lamborghini</h3>
               <p class="location">South Jakarta</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img src="./assets/img/popular/iqx-azmi.png" alt="" srcset="" />
             <div class="image-desc position-absolute">
               <h3 class="vehicle-name">Teluk Bogam</h3>
               <p class="location">Kalimantan</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/cars/white-jeep.png"
               alt="white-jeep.png"
@@ -236,7 +260,7 @@
               <h3 class="vehicle-name">White Jeep</h3>
               <p class="location">Kalimantan</p>
             </div>
-          </div>
+          </a>
         </div>
         <a class="d-block d-md-none text-center mt-4" href="#"
           >View all <span><i class="icon fa-solid fa-chevron-right"></i></span
@@ -256,7 +280,10 @@
         <div
           class="popular-vehicles d-flex flex-column align-items-center flex-md-row row"
         >
-          <div class="image-wrapper position-relative col">
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/motorbike/vespa.png"
               alt="vespa.png"
@@ -266,8 +293,11 @@
               <h3 class="vehicle-name">Vespa</h3>
               <p class="location">Yogyakarta</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/popular/manny-moreno.png"
               alt="manny-moreno.png"
@@ -277,8 +307,11 @@
               <h3 class="vehicle-name">Honda KLX</h3>
               <p class="location">Kalimantan</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/motorbike/honda.png"
               alt="honda.png"
@@ -288,14 +321,17 @@
               <h3 class="vehicle-name">Honda</h3>
               <p class="location">Malang</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img src="./assets/img/popular/chuttersnap.png" alt="" srcset="" />
             <div class="image-desc position-absolute">
               <h3 class="vehicle-name">Matic Bike</h3>
               <p class="location">Yogyakarta</p>
             </div>
-          </div>
+          </a>
         </div>
         <a class="d-block d-md-none text-center mt-4" href="#"
           >View all <span><i class="icon fa-solid fa-chevron-right"></i></span
@@ -315,7 +351,10 @@
         <div
           class="popular-vehicles d-flex flex-column align-items-center flex-md-row row"
         >
-          <div class="image-wrapper position-relative col">
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/bike/alonso-talbert-s6DiDMLK0jk-unsplash-1.png"
               alt="alonso-talbert-s6DiDMLK0jk-unsplash-1.png"
@@ -325,8 +364,11 @@
               <h3 class="vehicle-name">Fixie</h3>
               <p class="location">Yogyakarta</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/bike/michail-sapiton-V-9PQsTpX9c-unsplash-1.png"
               alt="michail-sapiton-V-9PQsTpX9c-unsplash-1.png"
@@ -336,8 +378,11 @@
               <h3 class="vehicle-name">Onthel</h3>
               <p class="location">Malang</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/bike/pascal-obermeier-YOphb-Xr2sk-unsplash-1.png"
               alt="pascal-obermeier-YOphb-Xr2sk-unsplash-1.png"
@@ -347,8 +392,11 @@
               <h3 class="vehicle-name">Sport Bike</h3>
               <p class="location">Kalimantan</p>
             </div>
-          </div>
-          <div class="image-wrapper position-relative col">
+          </a>
+          <a
+            href="/vehicle-detail.html"
+            class="image-wrapper position-relative col"
+          >
             <img
               src="./assets/img/bike/robert-bye-tG36rvCeqng-unsplash-1.png"
               alt="robert-bye-tG36rvCeqng-unsplash-1.png"
@@ -358,7 +406,7 @@
               <h3 class="vehicle-name">Fixie Gray</h3>
               <p class="location">Yogyakarta</p>
             </div>
-          </div>
+          </a>
         </div>
         <a class="d-block d-md-none text-center mt-4" href="#"
           >View all <span><i class="icon fa-solid fa-chevron-right"></i></span

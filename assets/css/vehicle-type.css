@@ -105,6 +105,7 @@ main .vehicle-list .popular-vehicles .image-wrapper {
   width: 75%;
   height: 23rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 main .vehicle-list .popular-vehicles img {

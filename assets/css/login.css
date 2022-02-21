@@ -23,7 +23,7 @@ h1 {
   padding-inline: 3em;
 }
 
-form.login-form > input, form.login-form > button, .other-way > button, .sign-up {
+form.login-form > input, form.login-form > .btn, .other-way > .btn, .sign-up {
   padding: 1em 1.2em;
   border-radius: 10px;
   font-family: Nunito, sans-serif;
@@ -35,18 +35,18 @@ form.login-form > input {
   color: rgba(57, 57, 57, 0.5);
 }
 
-button, .sign-up {
+.btn, .sign-up {
   border: none;
   font-weight: 900;
 }
 
-button.login {
+.btn.login {
   background:var(--one-color);
   box-shadow: 0px 0px 10px var(--one-color);
   color: #FFFFFF;
 }
 
-button.google-login {
+.btn.google-login {
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(78, 78, 78, 0.4);
 }
